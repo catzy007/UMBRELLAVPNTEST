@@ -7,7 +7,7 @@ void tstcore(char **addr,int count){
   int n=0;
   char *command=malloc(sizeof(char)*128);
   while(n<count-1){
-    strcpy(command,"ping -n 1 ");
+    strcpy(command,"ping -n 1 -w 2000 ");
     strcat(command,addr[n]);
     strcat(command," | find \"TTL=\"");
     //printf("%s\n",command); //debug_line_can_be_deleted
