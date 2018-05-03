@@ -61,6 +61,10 @@ int main(){
     free(addr[n]);
   }
   free(addr);
+  
+//end_of_program
+printf("\nTest has done. Press any key to exit");
+system("pause > nul");
 
 //2018 Bagus Saputra
 //this program uses https://github.com/tapio/rlutil
