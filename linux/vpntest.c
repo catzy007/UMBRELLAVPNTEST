@@ -31,7 +31,7 @@ int main(){
   while(strcmp(temp,"BEGIN")!=0){
     addr=realloc(addr,sizeof(char*)*(count+1)); //reallocate some memory
     if(!addr){ //allocate check
-      printf("Can't allocate more memory - %d\n",sizeof(char*)*(count+1));
+      printf("Can't allocate more memory - %ld\n",sizeof(char*)*(count+1));
       return -1;
     }
 
